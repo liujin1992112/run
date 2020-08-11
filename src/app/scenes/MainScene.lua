@@ -4,11 +4,11 @@ local MainScene = class("MainScene", function()
 end)
 
 function MainScene:ctor()
-    -- local isFirstPlay = cc.UserDefault:getBoolForKey("isFirstPlay", false)
-    -- if isFirstPlay == false then
-        
-    -- end
-    -- self:initFirstData();
+    local isFirstPlay = cc.UserDefault:getInstance():getBoolForKey("isFirstPlay", false)
+    if isFirstPlay == false then
+        --首次进入游戏，初始化首次进入游戏的数据
+        self:initFirstData()
+    end
     
     --将签到界面添加到主场景上
     local signLayer = app:createView("SignLayer")
@@ -23,28 +23,28 @@ function MainScene:onExit()
 end
 
 function MainScene:initFirstData()
-    local isFirstPlay = cc.UserDefault:getBoolForKey("isFirstPlay", false)
+    local instance = cc.UserDefault:getInstance();
+    local isFirstPlay = instance:getBoolForKey("isFirstPlay", false)
     if isFirstPlay == false then
-        print("initFirstData")
-        cc.UserDefault:setBoolForKey("isFirstPlay", true);
-		
-		cc.UserDefault:setBoolForKey("isCar", false);
-		cc.UserDefault:setBoolForKey("isShoes", false);
-		cc.UserDefault:setBoolForKey("isGlass", false);
-		cc.UserDefault:setBoolForKey("isMoney", false);
+        instance:setBoolForKey("isFirstPlay", true)
 
-		cc.UserDefault:setBoolForKey("isMusic", true);
-		cc.UserDefault:setBoolForKey("isSound", true);
+        instance:setBoolForKey("isCar", false)
+		instance:setBoolForKey("isShoes", false)
+		instance:setBoolForKey("isGlass", false)
+		instance:setBoolForKey("isMoney", false)
 
-		cc.UserDefault:setIntegerForKey("contentGold", 0);
-		cc.UserDefault:setIntegerForKey("bestLenth", 0);
-		cc.UserDefault:setIntegerForKey("bestScore", 0);
+		instance:setBoolForKey("isMusic", true)
+		instance:setBoolForKey("isSound", true)
 
-		cc.UserDefault:setIntegerForKey("preDays", 0);
+		instance:setIntegerForKey("contentGold", 0)
+		instance:setIntegerForKey("bestLenth", 0)
+		instance:setIntegerForKey("bestScore", 0)
 
-		cc.UserDefault:setBoolForKey("isChooseOnCar", false);
+		instance:setIntegerForKey("preDays", 0)
 
-		cc.UserDefault:setBoolForKey("isGetTask", false);
+		instance:setBoolForKey("isChooseOnCar", false)
+
+		instance:setBoolForKey("isGetTask", false)
     end
 end
 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userDefaultRoot>
+    <isFirstPlay>true</isFirstPlay>
+    <isCar>false</isCar>
+    <isShoes>false</isShoes>
+    <isGlass>false</isGlass>
+    <isMoney>false</isMoney>
+    <isMusic>true</isMusic>
+    <isSound>true</isSound>
+    <contentGold>0</contentGold>
+    <bestLenth>0</bestLenth>
+    <bestScore>0</bestScore>
+    <preDays>0</preDays>
+    <isChooseOnCar>false</isChooseOnCar>
+    <isGetTask>false</isGetTask>
+</userDefaultRoot>

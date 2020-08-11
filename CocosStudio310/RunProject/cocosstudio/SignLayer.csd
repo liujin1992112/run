@@ -20,17 +20,6 @@
                 <FileData Type="Normal" Path="sign/board.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="board2" ActionTag="-1611088009" Tag="9" IconVisible="False" LeftMargin="120.5000" RightMargin="120.5000" TopMargin="43.0000" BottomMargin="43.0000" ctype="SpriteObjectData">
-                <Size X="559.0000" Y="394.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="400.0000" Y="240.0000" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5000" Y="0.5000" />
-                <PreSize X="0.6988" Y="0.8208" />
-                <FileData Type="Normal" Path="sign/board2.png" Plist="" />
-                <BlendFunc Src="1" Dst="771" />
-              </AbstractNodeData>
             </Children>
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="480.0000" Y="320.0000" />
@@ -44,7 +33,29 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btn_sign" ActionTag="459482711" Tag="8" IconVisible="False" LeftMargin="563.2242" RightMargin="248.7758" TopMargin="170.7334" BottomMargin="431.2666" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="118" Scale9Height="16" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="mark_sign" ActionTag="-1699246445" VisibleForFrame="False" Tag="13" IconVisible="False" LeftMargin="272.2346" RightMargin="587.7654" TopMargin="234.0976" BottomMargin="296.9024" ctype="SpriteObjectData">
+            <Size X="100.0000" Y="109.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="322.2346" Y="351.4024" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.3357" Y="0.5491" />
+            <PreSize X="0.1042" Y="0.1703" />
+            <FileData Type="Normal" Path="sign/signContentDay.png" Plist="" />
+            <BlendFunc Src="1" Dst="771" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="board2" ActionTag="-1611088009" Tag="9" IconVisible="False" LeftMargin="200.5000" RightMargin="200.5000" TopMargin="123.0000" BottomMargin="123.0000" ctype="SpriteObjectData">
+            <Size X="559.0000" Y="394.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="480.0000" Y="320.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.5000" Y="0.5000" />
+            <PreSize X="0.5823" Y="0.6156" />
+            <FileData Type="Normal" Path="sign/board2.png" Plist="" />
+            <BlendFunc Src="1" Dst="771" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="btn_sign" ActionTag="459482711" Tag="8" IconVisible="False" LeftMargin="563.2242" RightMargin="248.7758" TopMargin="170.7334" BottomMargin="431.2666" TouchEnable="True" FontSize="14" ButtonText="Button" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="118" Scale9Height="16" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="148.0000" Y="38.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="637.2242" Y="450.2666" />

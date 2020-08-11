@@ -70,5 +70,3 @@ LOAD LUA FILE: E:/Work/quick-cocos2dx/run/src/main.lua
 
 [LUA-print] [INFO] #
 
-[LUA ERROR] [string "E:/Work/quick-cocos2dx/run/src/app/views/SignLayer.lua"]:16: attempt to index global 'console' (a nil value)
-
