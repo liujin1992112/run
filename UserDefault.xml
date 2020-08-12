@@ -13,4 +13,6 @@
     <preDays>0</preDays>
     <isChooseOnCar>false</isChooseOnCar>
     <isGetTask>false</isGetTask>
+    <preDay>213</preDay>
+    <keepDay>5</keepDay>
 </userDefaultRoot>

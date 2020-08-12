@@ -12,7 +12,17 @@ function MainScene:ctor()
     
     --将签到界面添加到主场景上
     local signLayer = app:createView("SignLayer")
-    signLayer:addTo(self)
+    if signLayer:isShowSign() then
+        
+        signLayer:addTo(self)
+    else
+        --今天已经签到
+        app:createView("MainLayer"):addTo(self)
+    end
+
+end
+
+function MainScene:preladMusic()
 
 end
 
@@ -23,7 +33,7 @@ function MainScene:onExit()
 end
 
 function MainScene:initFirstData()
-    local instance = cc.UserDefault:getInstance();
+    local instance = cc.UserDefault:getInstance()
     local isFirstPlay = instance:getBoolForKey("isFirstPlay", false)
     if isFirstPlay == false then
         instance:setBoolForKey("isFirstPlay", true)

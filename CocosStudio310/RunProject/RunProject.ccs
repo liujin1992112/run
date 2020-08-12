@@ -3,6 +3,14 @@
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
+        <Folder Name="main">
+          <Image Name="gameBackground.jpg" />
+          <Image Name="lufei1.png" />
+          <Image Name="lufei2.png" />
+          <Image Name="tips1.png" />
+          <Image Name="tips2.png" />
+          <Image Name="title.png" />
+        </Folder>
         <Folder Name="sign">
           <Image Name="background.jpg" />
           <Image Name="board.png" />
@@ -14,6 +22,7 @@
           <Image Name="signSign.png" />
         </Folder>
         <Image Name="HelloWorld.png" />
+        <Project Name="MainLayer.csd" Type="Layer" />
         <Project Name="MainScene.csd" Type="Scene" />
         <Project Name="SignLayer.csd" Type="Layer" />
       </RootFolder>
