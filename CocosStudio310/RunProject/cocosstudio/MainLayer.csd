@@ -4,9 +4,9 @@
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="7" ctype="GameLayerObjectData">
-        <Size X="960.0000" Y="640.0000" />
+        <Size X="800.0000" Y="480.0000" />
         <Children>
-          <AbstractNodeData Name="background" ActionTag="-2024760938" Tag="8" IconVisible="False" LeftMargin="80.0000" RightMargin="80.0000" TopMargin="80.0000" BottomMargin="80.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" LeftEage="264" RightEage="264" TopEage="158" BottomEage="158" Scale9OriginX="264" Scale9OriginY="158" Scale9Width="272" Scale9Height="164" ctype="PanelObjectData">
+          <AbstractNodeData Name="background" ActionTag="-2024760938" Tag="8" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" LeftEage="264" RightEage="264" TopEage="158" BottomEage="158" Scale9OriginX="264" Scale9OriginY="158" Scale9Width="272" Scale9Height="164" ctype="PanelObjectData">
             <Size X="800.0000" Y="480.0000" />
             <Children>
               <AbstractNodeData Name="lufei_1" ActionTag="-1712341995" Tag="9" IconVisible="False" LeftMargin="80.0000" RightMargin="80.0000" TopMargin="0.0008" BottomMargin="-0.0008" ctype="SpriteObjectData">
@@ -16,7 +16,7 @@
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.5000" />
-                <PreSize X="0.0575" Y="0.0958" />
+                <PreSize X="0.8000" Y="1.0000" />
                 <FileData Type="Normal" Path="main/lufei1.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
@@ -27,7 +27,7 @@
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.5000" />
-                <PreSize X="0.0575" Y="0.0958" />
+                <PreSize X="0.8000" Y="1.0000" />
                 <FileData Type="Normal" Path="main/lufei2.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
@@ -43,12 +43,12 @@
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
             </Children>
-            <AnchorPoint />
-            <Position X="80.0000" Y="80.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="400.0000" Y="240.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0833" Y="0.1250" />
-            <PreSize X="0.8333" Y="0.7500" />
+            <PrePosition X="0.5000" Y="0.5000" />
+            <PreSize X="1.0000" Y="1.0000" />
             <FileData Type="Normal" Path="sign/background.jpg" Plist="" />
             <SingleColor A="255" R="150" G="200" B="255" />
             <FirstColor A="255" R="150" G="200" B="255" />

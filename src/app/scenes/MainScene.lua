@@ -13,7 +13,6 @@ function MainScene:ctor()
     --将签到界面添加到主场景上
     local signLayer = app:createView("SignLayer")
     if signLayer:isShowSign() then
-        
         signLayer:addTo(self)
     else
         --今天已经签到
