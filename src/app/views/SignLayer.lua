@@ -106,6 +106,7 @@ function SignLayer:onBtnTodaySign()
     instance:setIntegerForKey("contentGold", contentJewelNum)
 
     --进入游戏主界面
+    app:createView("MainLayer"):addTo(self)
 end
 
 return SignLayer

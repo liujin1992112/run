@@ -8,6 +8,8 @@ function BaseLayer:ctor()
 	self:setTouchEnabled(false)
 	self:setBackGroundColor(cc.c3b(0x3c, 0x3c, 0x3c))
 	self:setBackGroundColorType(1)
+
+	cc.TextureCache:getInstance():dump()
 end
 
 return BaseLayer
