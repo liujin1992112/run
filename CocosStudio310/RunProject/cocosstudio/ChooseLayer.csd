@@ -231,6 +231,28 @@
             <PrePosition X="0.0000" />
             <PreSize X="0.0000" Y="0.0000" />
           </AbstractNodeData>
+          <AbstractNodeData Name="set_node" ActionTag="-1473178369" Tag="44" IconVisible="True" RightMargin="800.0000" TopMargin="480.0000" BottomMargin="0.0000" ctype="SingleNodeObjectData">
+            <Size X="0.0000" Y="0.0000" />
+            <Children>
+              <AbstractNodeData Name="set_bg" ActionTag="-96817404" Tag="45" IconVisible="False" LeftMargin="211.8611" RightMargin="-497.8611" TopMargin="-18.9436" BottomMargin="-461.0565" ctype="SpriteObjectData">
+                <Size X="286.0000" Y="480.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="354.8611" Y="-221.0564" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition />
+                <PreSize X="0.0000" Y="0.0000" />
+                <FileData Type="Normal" Path="choose/SetBoard.png" Plist="" />
+                <BlendFunc Src="1" Dst="771" />
+              </AbstractNodeData>
+            </Children>
+            <AnchorPoint />
+            <Position Y="0.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition Y="0.0000" />
+            <PreSize X="0.0000" Y="0.0000" />
+          </AbstractNodeData>
         </Children>
       </ObjectData>
     </Content>

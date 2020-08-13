@@ -70,9 +70,178 @@ LOAD LUA FILE: E:/Work/quick-cocos2dx/run/src/main.lua
 
 [LUA-print] [INFO] #
 
-[LUA-print] dump from: [string "E:/Work/quick-cocos2dx/run/src/app/views/ChooseLayer.lua"]:17: in function <[string "E:/Work/quick-cocos2dx/run/src/app/views/ChooseLayer.lua"]:15>
+[LUA-print] [INFO] LUA VM MEMORY USED: 2042.70 KB
 
-[LUA-print] - "<var>" = userdata: 0x0b9e0bd8
+[LUA-print] [INFO] "E:/Work/quick-cocos2dx/run/res/css/choose/setMenuLock.png" rc=11 id=22 200 x 75 @ 32 bpp => 58 KB
+"/cc_fps_images" rc=4 id=1 999 x 54 @ 16 bpp => 105 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/signContentDay.png" rc=1 id=6 100 x 109 @ 32 bpp => 42 KB
+"/cc_2x2_white_image" rc=1 id=4 2 x 2 @ 32 bpp => 0 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/board.png" rc=1 id=5 559 x 394 @ 32 bpp => 860 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/signSign.png" rc=1 id=14 41 x 41 @ 32 bpp => 6 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/background.jpg" rc=3 id=3 800 x 480 @ 32 bpp => 1500 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/taskMenu.png" rc=21 id=18 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/signLock.png" rc=1 id=9 148 x 38 @ 32 bpp => 21 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/board2.png" rc=1 id=7 559 x 394 @ 32 bpp => 860 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/sign.png" rc=1 id=8 148 x 38 @ 32 bpp => 21 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/signDisable.png" rc=1 id=10 148 x 38 @ 32 bpp => 21 KB
+"E:/Work/quick-cocos2dx/run/res/css/main/lufei1.png" rc=2 id=15 640 x 480 @ 32 bpp => 1200 KB
+"E:/Work/quick-cocos2dx/run/res/css/main/lufei2.png" rc=1 id=16 640 x 480 @ 32 bpp => 1200 KB
+"E:/Work/quick-cocos2dx/run/res/css/main/title.png" rc=2 id=17 260 x 39 @ 32 bpp => 39 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/board2.png" rc=21 id=2 324 x 480 @ 32 bpp => 607 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/board2Lock.png" rc=11 id=11 324 x 480 @ 32 bpp => 607 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/board1.png" rc=21 id=12 286 x 480 @ 32 bpp => 536 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/board1Lock.png" rc=11 id=13 286 x 480 @ 32 bpp => 536 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/taskMenuLock.png" rc=11 id=19 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/tan.png" rc=2 id=20 19 x 45 @ 32 bpp => 3 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/setMenu.png" rc=21 id=21 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/taskBoard.png" rc=2 id=27 397 x 392 @ 32 bpp => 607 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/startMenu2.png" rc=21 id=23 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/startMenu2Lock.png" rc=11 id=24 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/returnMenu.png" rc=21 id=25 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/returnMenuLock.png" rc=11 id=26 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/SetBoard.png" rc=2 id=28 286 x 480 @ 32 bpp => 536 KB
+TextureCache dumpDebugInfo: 28 textures, for 9784 KB (9.56 MB)
 
-[LUA-print] nil
+
+[LUA-print] [INFO] ---------------------------------------------------
+
+[LUA-print] [INFO] LUA VM MEMORY USED: 2067.62 KB
+
+[LUA-print] [INFO] "E:/Work/quick-cocos2dx/run/res/css/choose/setMenuLock.png" rc=11 id=22 200 x 75 @ 32 bpp => 58 KB
+"/cc_fps_images" rc=4 id=1 999 x 54 @ 16 bpp => 105 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/signContentDay.png" rc=1 id=6 100 x 109 @ 32 bpp => 42 KB
+"/cc_2x2_white_image" rc=1 id=4 2 x 2 @ 32 bpp => 0 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/board.png" rc=1 id=5 559 x 394 @ 32 bpp => 860 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/signSign.png" rc=1 id=14 41 x 41 @ 32 bpp => 6 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/background.jpg" rc=3 id=3 800 x 480 @ 32 bpp => 1500 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/taskMenu.png" rc=21 id=18 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/signLock.png" rc=1 id=9 148 x 38 @ 32 bpp => 21 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/board2.png" rc=1 id=7 559 x 394 @ 32 bpp => 860 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/sign.png" rc=1 id=8 148 x 38 @ 32 bpp => 21 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/signDisable.png" rc=1 id=10 148 x 38 @ 32 bpp => 21 KB
+"E:/Work/quick-cocos2dx/run/res/css/main/lufei1.png" rc=2 id=15 640 x 480 @ 32 bpp => 1200 KB
+"E:/Work/quick-cocos2dx/run/res/css/main/lufei2.png" rc=1 id=16 640 x 480 @ 32 bpp => 1200 KB
+"E:/Work/quick-cocos2dx/run/res/css/main/title.png" rc=2 id=17 260 x 39 @ 32 bpp => 39 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/board2.png" rc=21 id=2 324 x 480 @ 32 bpp => 607 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/board2Lock.png" rc=11 id=11 324 x 480 @ 32 bpp => 607 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/board1.png" rc=21 id=12 286 x 480 @ 32 bpp => 536 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/board1Lock.png" rc=11 id=13 286 x 480 @ 32 bpp => 536 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/taskMenuLock.png" rc=11 id=19 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/tan.png" rc=2 id=20 19 x 45 @ 32 bpp => 3 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/setMenu.png" rc=21 id=21 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/taskBoard.png" rc=2 id=27 397 x 392 @ 32 bpp => 607 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/startMenu2.png" rc=21 id=23 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/startMenu2Lock.png" rc=11 id=24 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/returnMenu.png" rc=21 id=25 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/returnMenuLock.png" rc=11 id=26 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/SetBoard.png" rc=2 id=28 286 x 480 @ 32 bpp => 536 KB
+TextureCache dumpDebugInfo: 28 textures, for 9784 KB (9.56 MB)
+
+
+[LUA-print] [INFO] ---------------------------------------------------
+
+[LUA-print] [INFO] LUA VM MEMORY USED: 2067.93 KB
+
+[LUA-print] [INFO] "E:/Work/quick-cocos2dx/run/res/css/choose/setMenuLock.png" rc=11 id=22 200 x 75 @ 32 bpp => 58 KB
+"/cc_fps_images" rc=4 id=1 999 x 54 @ 16 bpp => 105 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/signContentDay.png" rc=1 id=6 100 x 109 @ 32 bpp => 42 KB
+"/cc_2x2_white_image" rc=1 id=4 2 x 2 @ 32 bpp => 0 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/board.png" rc=1 id=5 559 x 394 @ 32 bpp => 860 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/signSign.png" rc=1 id=14 41 x 41 @ 32 bpp => 6 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/background.jpg" rc=3 id=3 800 x 480 @ 32 bpp => 1500 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/taskMenu.png" rc=21 id=18 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/signLock.png" rc=1 id=9 148 x 38 @ 32 bpp => 21 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/board2.png" rc=1 id=7 559 x 394 @ 32 bpp => 860 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/sign.png" rc=1 id=8 148 x 38 @ 32 bpp => 21 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/signDisable.png" rc=1 id=10 148 x 38 @ 32 bpp => 21 KB
+"E:/Work/quick-cocos2dx/run/res/css/main/lufei1.png" rc=2 id=15 640 x 480 @ 32 bpp => 1200 KB
+"E:/Work/quick-cocos2dx/run/res/css/main/lufei2.png" rc=1 id=16 640 x 480 @ 32 bpp => 1200 KB
+"E:/Work/quick-cocos2dx/run/res/css/main/title.png" rc=2 id=17 260 x 39 @ 32 bpp => 39 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/board2.png" rc=21 id=2 324 x 480 @ 32 bpp => 607 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/board2Lock.png" rc=11 id=11 324 x 480 @ 32 bpp => 607 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/board1.png" rc=21 id=12 286 x 480 @ 32 bpp => 536 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/board1Lock.png" rc=11 id=13 286 x 480 @ 32 bpp => 536 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/taskMenuLock.png" rc=11 id=19 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/tan.png" rc=2 id=20 19 x 45 @ 32 bpp => 3 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/setMenu.png" rc=21 id=21 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/taskBoard.png" rc=2 id=27 397 x 392 @ 32 bpp => 607 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/startMenu2.png" rc=21 id=23 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/startMenu2Lock.png" rc=11 id=24 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/returnMenu.png" rc=21 id=25 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/returnMenuLock.png" rc=11 id=26 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/SetBoard.png" rc=2 id=28 286 x 480 @ 32 bpp => 536 KB
+TextureCache dumpDebugInfo: 28 textures, for 9784 KB (9.56 MB)
+
+
+[LUA-print] [INFO] ---------------------------------------------------
+
+[LUA-print] [INFO] LUA VM MEMORY USED: 2068.24 KB
+
+[LUA-print] [INFO] "E:/Work/quick-cocos2dx/run/res/css/choose/setMenuLock.png" rc=11 id=22 200 x 75 @ 32 bpp => 58 KB
+"/cc_fps_images" rc=4 id=1 999 x 54 @ 16 bpp => 105 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/signContentDay.png" rc=1 id=6 100 x 109 @ 32 bpp => 42 KB
+"/cc_2x2_white_image" rc=1 id=4 2 x 2 @ 32 bpp => 0 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/board.png" rc=1 id=5 559 x 394 @ 32 bpp => 860 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/signSign.png" rc=1 id=14 41 x 41 @ 32 bpp => 6 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/background.jpg" rc=3 id=3 800 x 480 @ 32 bpp => 1500 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/taskMenu.png" rc=21 id=18 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/signLock.png" rc=1 id=9 148 x 38 @ 32 bpp => 21 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/board2.png" rc=1 id=7 559 x 394 @ 32 bpp => 860 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/sign.png" rc=1 id=8 148 x 38 @ 32 bpp => 21 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/signDisable.png" rc=1 id=10 148 x 38 @ 32 bpp => 21 KB
+"E:/Work/quick-cocos2dx/run/res/css/main/lufei1.png" rc=2 id=15 640 x 480 @ 32 bpp => 1200 KB
+"E:/Work/quick-cocos2dx/run/res/css/main/lufei2.png" rc=1 id=16 640 x 480 @ 32 bpp => 1200 KB
+"E:/Work/quick-cocos2dx/run/res/css/main/title.png" rc=2 id=17 260 x 39 @ 32 bpp => 39 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/board2.png" rc=21 id=2 324 x 480 @ 32 bpp => 607 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/board2Lock.png" rc=11 id=11 324 x 480 @ 32 bpp => 607 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/board1.png" rc=21 id=12 286 x 480 @ 32 bpp => 536 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/board1Lock.png" rc=11 id=13 286 x 480 @ 32 bpp => 536 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/taskMenuLock.png" rc=11 id=19 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/tan.png" rc=2 id=20 19 x 45 @ 32 bpp => 3 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/setMenu.png" rc=21 id=21 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/taskBoard.png" rc=2 id=27 397 x 392 @ 32 bpp => 607 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/startMenu2.png" rc=21 id=23 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/startMenu2Lock.png" rc=11 id=24 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/returnMenu.png" rc=21 id=25 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/returnMenuLock.png" rc=11 id=26 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/SetBoard.png" rc=2 id=28 286 x 480 @ 32 bpp => 536 KB
+TextureCache dumpDebugInfo: 28 textures, for 9784 KB (9.56 MB)
+
+
+[LUA-print] [INFO] ---------------------------------------------------
+
+[LUA-print] [INFO] LUA VM MEMORY USED: 2068.55 KB
+
+[LUA-print] [INFO] "E:/Work/quick-cocos2dx/run/res/css/choose/setMenuLock.png" rc=11 id=22 200 x 75 @ 32 bpp => 58 KB
+"/cc_fps_images" rc=4 id=1 999 x 54 @ 16 bpp => 105 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/signContentDay.png" rc=1 id=6 100 x 109 @ 32 bpp => 42 KB
+"/cc_2x2_white_image" rc=1 id=4 2 x 2 @ 32 bpp => 0 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/board.png" rc=1 id=5 559 x 394 @ 32 bpp => 860 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/signSign.png" rc=1 id=14 41 x 41 @ 32 bpp => 6 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/background.jpg" rc=3 id=3 800 x 480 @ 32 bpp => 1500 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/taskMenu.png" rc=21 id=18 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/signLock.png" rc=1 id=9 148 x 38 @ 32 bpp => 21 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/board2.png" rc=1 id=7 559 x 394 @ 32 bpp => 860 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/sign.png" rc=1 id=8 148 x 38 @ 32 bpp => 21 KB
+"E:/Work/quick-cocos2dx/run/res/css/sign/signDisable.png" rc=1 id=10 148 x 38 @ 32 bpp => 21 KB
+"E:/Work/quick-cocos2dx/run/res/css/main/lufei1.png" rc=2 id=15 640 x 480 @ 32 bpp => 1200 KB
+"E:/Work/quick-cocos2dx/run/res/css/main/lufei2.png" rc=1 id=16 640 x 480 @ 32 bpp => 1200 KB
+"E:/Work/quick-cocos2dx/run/res/css/main/title.png" rc=2 id=17 260 x 39 @ 32 bpp => 39 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/board2.png" rc=21 id=2 324 x 480 @ 32 bpp => 607 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/board2Lock.png" rc=11 id=11 324 x 480 @ 32 bpp => 607 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/board1.png" rc=21 id=12 286 x 480 @ 32 bpp => 536 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/board1Lock.png" rc=11 id=13 286 x 480 @ 32 bpp => 536 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/taskMenuLock.png" rc=11 id=19 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/tan.png" rc=2 id=20 19 x 45 @ 32 bpp => 3 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/setMenu.png" rc=21 id=21 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/taskBoard.png" rc=2 id=27 397 x 392 @ 32 bpp => 607 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/startMenu2.png" rc=21 id=23 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/startMenu2Lock.png" rc=11 id=24 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/returnMenu.png" rc=21 id=25 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/returnMenuLock.png" rc=11 id=26 200 x 75 @ 32 bpp => 58 KB
+"E:/Work/quick-cocos2dx/run/res/css/choose/SetBoard.png" rc=2 id=28 286 x 480 @ 32 bpp => 536 KB
+TextureCache dumpDebugInfo: 28 textures, for 9784 KB (9.56 MB)
+
+
+[LUA-print] [INFO] ---------------------------------------------------
 
