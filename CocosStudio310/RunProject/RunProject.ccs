@@ -3,6 +3,10 @@
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
+        <Folder Name="armature">
+          <ExportJsonFile Name="Enemy3.ExportJson" />
+          <ExportJsonFile Name="Run.ExportJson" />
+        </Folder>
         <Folder Name="choose">
           <Image Name="addSpeedTitle.png" />
           <Image Name="bank1.png" />
@@ -92,12 +96,14 @@
           <Image Name="top2.png" />
           <Image Name="y.png" />
         </Folder>
+        <Folder Name="loading">
+          <Image Name="tips1.png" />
+          <Image Name="tips2.png" />
+        </Folder>
         <Folder Name="main">
           <Image Name="gameBackground.jpg" />
           <Image Name="lufei1.png" />
           <Image Name="lufei2.png" />
-          <Image Name="tips1.png" />
-          <Image Name="tips2.png" />
           <Image Name="title.png" />
         </Folder>
         <Folder Name="sign">
@@ -112,9 +118,11 @@
         </Folder>
         <Project Name="ChooseLayer.csd" Type="Layer" />
         <Image Name="HelloWorld.png" />
+        <Project Name="LoadingLayer.csd" Type="Layer" />
         <Project Name="MainLayer.csd" Type="Layer" />
         <Project Name="MainScene.csd" Type="Scene" />
         <Project Name="SignLayer.csd" Type="Layer" />
+        <Folder Name="game" />
       </RootFolder>
     </Group>
   </SolutionFolder>
