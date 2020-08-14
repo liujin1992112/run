@@ -25,29 +25,73 @@ function ChooseLayer:ctor()
 
     self.taskBg = ccui.Helper:seekWidgetByName(self.taskNode, "task_bg")
 
+
     self.setBg = ccui.Helper:seekWidgetByName(self.settingNode, "set_bg")
 
+    self.cbSwitchEffect = ccui.Helper:seekWidgetByName(self.settingNode, "cb_switch_effect")
+    self.cbSwitchMusic = ccui.Helper:seekWidgetByName(self.settingNode, "cb_switch_music")
+    self.effectPoint = ccui.Helper:seekWidgetByName(self.settingNode, "effect_point")
+    self.musicPoint = ccui.Helper:seekWidgetByName(self.settingNode, "music_point")
+    self.initCbX = self.effectPoint:getPositionX()
 
-    self.btnDailyTask:addTouchEventListener(function(sender, eventType) 
+    local onBtnClickCallback = function(sender, eventType)
         if cc.EventCode.ENDED == eventType then
-            self:showDailyNode()
+            if sender == self.btnBoard1 then
+                cc.UserDefault:getInstance():setBoolForKey("isChooseOnCar", false)
+                self:refreshChooseCarBtn()
+            elseif sender == self.btnBoard2 then
+                cc.UserDefault:getInstance():setBoolForKey("isChooseOnCar", true)   --选择带车的主角
+                self:refreshChooseCarBtn()
+            elseif sender == self.btnDailyTask then
+                self:showDailyNode()
+                audio.playEffectSync("music/page.ogg")
+            elseif sender == self.btnSet then
+                self:showSetNode()
+                audio.playEffectSync("music/page.ogg")
+            elseif sender == self.btnStart then
+                audio.playEffectSync("music/bow.ogg")
+                app:createView("LoadingLayer"):addTo(self)
+            elseif sender == self.btnReturnMenu then
+                self:backMainNode()
+                audio.playEffectSync("music/page.ogg")
+            elseif sender == self.cbSwitchEffect then
+                local isSelected = not self.cbSwitchEffect:isSelected()
+                print("cbSwitchEffect  " , isSelected)
+                self.cbSwitchEffect:setSelected(isSelected)
+                cc.UserDefault:getInstance():setBoolForKey("isSound", isSelected)
+                self:refreshSetNode()
+            elseif sender == self.cbSwitchMusic then
+                local isSelected = not self.cbSwitchMusic:isSelected()
+                self.cbSwitchMusic:setSelected(isSelected)
+                print("cbSwitchMusic  " , isSelected)
+                cc.UserDefault:getInstance():setBoolForKey("isMusic", isSelected)
+                self:refreshSetNode()
+            else
+            end
         end
+    end
+
+    self.btnBoard1:addTouchEventListener(onBtnClickCallback)
+    self.btnBoard2:addTouchEventListener(onBtnClickCallback)
+    self.btnDailyTask:addTouchEventListener(onBtnClickCallback)
+    self.btnSet:addTouchEventListener(onBtnClickCallback)
+    self.btnStart:addTouchEventListener(onBtnClickCallback)
+    self.btnReturnMenu:addTouchEventListener(onBtnClickCallback)
+    self.cbSwitchEffect:addTouchEventListener(onBtnClickCallback)
+    self.cbSwitchMusic:addTouchEventListener(onBtnClickCallback)
+
+    
+
+    self.effectPoint:addNodeEventListener(cc.NODE_TOUCH_EVENT, function(event)
+        
     end)
-    self.btnSet:addTouchEventListener(function(sender, eventType) 
-        if cc.EventCode.ENDED == eventType then
-            self:showSetNode()
-        end
+    self.effectPoint:setTouchMode(cc.TOUCH_MODE_ONE_BY_ONE)
+    self.effectPoint:setTouchEnabled(true) --注意:必须先注册事件,然后再开启触摸
+
+    self.musicPoint:addNodeEventListener(cc.NODE_TOUCH_EVENT, function(event)
     end)
-    self.btnStart:addTouchEventListener(function(sender, eventType) 
-        if cc.EventCode.ENDED == eventType then
-            
-        end
-    end)
-    self.btnReturnMenu:addTouchEventListener(function(sender, eventType) 
-        if cc.EventCode.ENDED == eventType then
-            self:backMainNode()
-        end
-    end)
+    self.musicPoint:setTouchMode(cc.TOUCH_MODE_ONE_BY_ONE)
+    self.musicPoint:setTouchEnabled(true) --注意:必须先注册事件,然后再开启触摸
 
     self:showMainNode()
 end
@@ -80,7 +124,9 @@ function ChooseLayer:showMainNode()
 
     sleepTime = sleepTime + 0.05
     btnBoard2:setPositionY(self.initBoardY + 450)
-    btnBoard2:runAction(cc.Sequence:create(cc.DelayTime:create(sleepTime), cc.EaseBackOut:create(cc.MoveBy:create(0.3, cc.p(0,-450)))));
+    btnBoard2:runAction(cc.Sequence:create(cc.DelayTime:create(sleepTime), cc.EaseBackOut:create(cc.MoveBy:create(0.3, cc.p(0,-450))), cc.CallFunc:create(function() 
+        self:refreshChooseCarBtn()  --刷新玩家是否选择车状态
+    end)));
 
     sleepTime = sleepTime + 0.05
     btnDailyTask:setPositionX(self.initBtnX + 140)
@@ -94,16 +140,6 @@ function ChooseLayer:showMainNode()
     btnStart:setPositionX(self.initBtnX + 140)
     btnStart:runAction(cc.Sequence:create(cc.DelayTime:create(sleepTime), cc.EaseBackOut:create(cc.MoveBy:create(0.3, cc.p(-140,0)))));
 
-    --玩家是否选择车
-    local isChooseOnCar = cc.UserDefault:getInstance():getBoolForKey("isChooseOnCar")
-    if isChooseOnCar == true then
-        btnBoard1:runAction(cc.RepeatForever:create(cc.Sequence:create(cc.EaseInOut:create(cc.MoveBy:create(0.7,cc.p(0,-20)),2),cc.EaseInOut:create(cc.MoveBy:create(0.7,cc.p(0,20)),2))));
-        btnBoard2:setBright(false)
-    else 
-        btnBoard1:setBright(false)
-        btnBoard2:runAction(cc.RepeatForever:create(cc.Sequence:create(cc.EaseInOut:create(cc.MoveBy:create(0.7,cc.p(0,-20)),2),cc.EaseInOut:create(cc.MoveBy:create(0.7,cc.p(0,20)),2))));
-    end
-
     --是否有任务需要完成
     local isGetTask = cc.UserDefault:getInstance():getBoolForKey("isGetTask", false)
     local tan = ccui.Helper:seekWidgetByName(btnDailyTask, "tan")
@@ -112,6 +148,26 @@ function ChooseLayer:showMainNode()
         tan:runAction(cc.RepeatForever:create(cc.Sequence:create(cc.DelayTime:create(1), cc.JumpBy:create(0.3,cc.p(0,0),20,2))));
     else
         tan:setVisible(false)
+    end
+end
+
+--刷新选择车按钮的状态
+function ChooseLayer:refreshChooseCarBtn()
+    local isChooseOnCar = cc.UserDefault:getInstance():getBoolForKey("isChooseOnCar")
+    if isChooseOnCar == true then
+        self.btnBoard2:stopAllActions()
+        self.btnBoard2:setPositionY(self.initBoardY)
+
+        self.btnBoard1:runAction(cc.RepeatForever:create(cc.Sequence:create(cc.EaseInOut:create(cc.MoveBy:create(0.7,cc.p(0,-20)),2),cc.EaseInOut:create(cc.MoveBy:create(0.7,cc.p(0,20)),2))));
+        self.btnBoard1:setBright(true)
+        self.btnBoard2:setBright(false)
+    else
+        self.btnBoard1:stopAllActions()
+        self.btnBoard1:setPositionY(self.initBoardY)
+
+        self.btnBoard1:setBright(false)
+        self.btnBoard2:setBright(true)
+        self.btnBoard2:runAction(cc.RepeatForever:create(cc.Sequence:create(cc.EaseInOut:create(cc.MoveBy:create(0.7,cc.p(0,-20)),2),cc.EaseInOut:create(cc.MoveBy:create(0.7,cc.p(0,20)),2))));
     end
 end
 
@@ -155,9 +211,31 @@ end
 
 function ChooseLayer:showSetNode()
     self.curPanelName = "set_node"
+    self:refreshSetNode()
+    
+    -- ccui.CheckBox:create():setChe
 
     local sleepTime = self:resetMainNode();
     self.setBg:runAction(cc.Sequence:create(cc.DelayTime:create(sleepTime), cc.EaseBackOut:create(cc.MoveBy:create(0.3, cc.p(0, 400)))));
+end
+
+function ChooseLayer:refreshSetNode()
+    local isMusic = cc.UserDefault:getInstance():getBoolForKey("isMusic")
+    local isSound = cc.UserDefault:getInstance():getBoolForKey("isSound")
+
+    self.cbSwitchMusic:setSelected(isMusic)
+    self.cbSwitchEffect:setSelected(isSound)
+    if isMusic == true then
+        self.musicPoint:setPositionX(self.initCbX)
+    else
+        self.musicPoint:setPositionX(self.initCbX + 22)
+    end
+
+    if isSound == true then
+        self.effectPoint:setPositionX(self.initCbX)
+    else
+        self.effectPoint:setPositionX(self.initCbX + 22)
+    end
 end
 
 return ChooseLayer

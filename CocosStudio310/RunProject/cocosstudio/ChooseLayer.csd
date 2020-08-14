@@ -75,7 +75,7 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="tan_anim" StartIndex="0" EndIndex="60">
-          <RenderColor A="150" R="240" G="128" B="128" />
+          <RenderColor A="255" R="240" G="128" B="128" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Layer" Tag="12" ctype="GameLayerObjectData">
@@ -231,11 +231,59 @@
             <PrePosition X="0.0000" />
             <PreSize X="0.0000" Y="0.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="set_node" ActionTag="-1473178369" Tag="44" IconVisible="True" RightMargin="800.0000" TopMargin="480.0000" BottomMargin="0.0000" ctype="SingleNodeObjectData">
+          <AbstractNodeData Name="set_node" ActionTag="-1473178369" Tag="44" IconVisible="True" RightMargin="800.0000" TopMargin="480.0000" ctype="SingleNodeObjectData">
             <Size X="0.0000" Y="0.0000" />
             <Children>
-              <AbstractNodeData Name="set_bg" ActionTag="-96817404" Tag="45" IconVisible="False" LeftMargin="211.8611" RightMargin="-497.8611" TopMargin="-18.9436" BottomMargin="-461.0565" ctype="SpriteObjectData">
+              <AbstractNodeData Name="set_bg" ActionTag="-96817404" Tag="45" IconVisible="False" LeftMargin="211.8611" RightMargin="-497.8611" TopMargin="-18.9436" BottomMargin="-461.0564" ctype="SpriteObjectData">
                 <Size X="286.0000" Y="480.0000" />
+                <Children>
+                  <AbstractNodeData Name="switch_effect" ActionTag="-93250024" Tag="25" IconVisible="False" LeftMargin="132.8532" RightMargin="128.1468" TopMargin="114.3519" BottomMargin="344.6481" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
+                    <Size X="25.0000" Y="21.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="145.3532" Y="355.1481" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.5082" Y="0.7399" />
+                    <PreSize X="0.0874" Y="0.0437" />
+                    <NormalBackFileData Type="Normal" Path="choose/on.png" Plist="" />
+                    <PressedBackFileData Type="Normal" Path="choose/on.png" Plist="" />
+                    <DisableBackFileData Type="Normal" Path="choose/off.png" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="switch_music" ActionTag="137949579" Tag="26" IconVisible="False" LeftMargin="132.8500" RightMargin="128.1500" TopMargin="164.6671" BottomMargin="294.3329" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
+                    <Size X="25.0000" Y="21.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="145.3500" Y="304.8329" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.5082" Y="0.6351" />
+                    <PreSize X="0.0874" Y="0.0437" />
+                    <NormalBackFileData Type="Normal" Path="choose/on.png" Plist="" />
+                    <PressedBackFileData Type="Normal" Path="choose/on.png" Plist="" />
+                    <DisableBackFileData Type="Normal" Path="choose/off.png" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="effect_point" ActionTag="-484994471" Tag="27" IconVisible="False" LeftMargin="166.8255" RightMargin="102.1745" TopMargin="119.1192" BottomMargin="343.8808" ctype="SpriteObjectData">
+                    <Size X="17.0000" Y="17.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="175.3255" Y="352.3808" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.6130" Y="0.7341" />
+                    <PreSize X="0.0594" Y="0.0354" />
+                    <FileData Type="Normal" Path="choose/point.png" Plist="" />
+                    <BlendFunc Src="1" Dst="771" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="music_point" ActionTag="2063291828" Tag="28" IconVisible="False" LeftMargin="166.8300" RightMargin="102.1700" TopMargin="169.1215" BottomMargin="293.8785" ctype="SpriteObjectData">
+                    <Size X="17.0000" Y="17.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="175.3300" Y="302.3785" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.6130" Y="0.6300" />
+                    <PreSize X="0.0594" Y="0.0354" />
+                    <FileData Type="Normal" Path="choose/point.png" Plist="" />
+                    <BlendFunc Src="1" Dst="771" />
+                  </AbstractNodeData>
+                </Children>
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="354.8611" Y="-221.0564" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -247,10 +295,10 @@
               </AbstractNodeData>
             </Children>
             <AnchorPoint />
-            <Position Y="0.0000" />
+            <Position />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition Y="0.0000" />
+            <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
           </AbstractNodeData>
         </Children>

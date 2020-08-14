@@ -5,8 +5,8 @@
     <isShoes>false</isShoes>
     <isGlass>false</isGlass>
     <isMoney>false</isMoney>
-    <isMusic>true</isMusic>
-    <isSound>true</isSound>
+    <isMusic>false</isMusic>
+    <isSound>false</isSound>
     <contentGold>0</contentGold>
     <bestLenth>0</bestLenth>
     <bestScore>0</bestScore>
