@@ -237,7 +237,7 @@
               <AbstractNodeData Name="set_bg" ActionTag="-96817404" Tag="45" IconVisible="False" LeftMargin="211.8611" RightMargin="-497.8611" TopMargin="-18.9436" BottomMargin="-461.0564" ctype="SpriteObjectData">
                 <Size X="286.0000" Y="480.0000" />
                 <Children>
-                  <AbstractNodeData Name="switch_effect" ActionTag="-93250024" Tag="25" IconVisible="False" LeftMargin="132.8532" RightMargin="128.1468" TopMargin="114.3519" BottomMargin="344.6481" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
+                  <AbstractNodeData Name="cb_switch_effect" ActionTag="-93250024" Tag="25" IconVisible="False" LeftMargin="132.8532" RightMargin="128.1468" TopMargin="114.3519" BottomMargin="344.6481" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
                     <Size X="25.0000" Y="21.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="145.3532" Y="355.1481" />
@@ -249,7 +249,7 @@
                     <PressedBackFileData Type="Normal" Path="choose/on.png" Plist="" />
                     <DisableBackFileData Type="Normal" Path="choose/off.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="switch_music" ActionTag="137949579" Tag="26" IconVisible="False" LeftMargin="132.8500" RightMargin="128.1500" TopMargin="164.6671" BottomMargin="294.3329" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
+                  <AbstractNodeData Name="cb_switch_music" ActionTag="137949579" Tag="26" IconVisible="False" LeftMargin="132.8500" RightMargin="128.1500" TopMargin="164.6671" BottomMargin="294.3329" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
                     <Size X="25.0000" Y="21.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="145.3500" Y="304.8329" />

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="12" tilewidth="40" tileheight="40">
+ <tileset firstgid="1" name="forest" tilewidth="40" tileheight="40">
+  <image source="forest.png" width="1600" height="400"/>
+ </tileset>
+ <layer name="terrain1" width="40" height="12">
+  <data encoding="base64" compression="zlib">
+   eJztzrkNgDAQRFFLGDC0AuZqhdv9F8IPt4MlmC+9ZKIJQSml1B+rEFGjQYvkuHfozb8BIzImzFgc9xWb+bfjwIkLNx7H/UUx/z4f9BRc
+  </data>
+ </layer>
+ <layer name="terrain2" width="40" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjAJUEA3EMUCcDMQpg9C+ZiBuAeJuIO6hobvItW81EK8B4s1AvIWG7hoo+ygBlVjEGoG4id4OGQQAADBcDjE=
+  </data>
+ </layer>
+ <layer name="decorate" width="40" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMBiBGBCnAnEaEIsjsUFAAojtSTDLAYht0cRs0eyAAXGoODKwx6IfBOxIcAMlAJvdIOBIZ3dQEwAAACwFWQ==
+  </data>
+ </layer>
+ <layer name="protect" width="40" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMAqGD+iF4sEOAL5cARs=
+  </data>
+ </layer>
+ <objectgroup name="collision" width="40" height="12">
+  <object name="c1" x="0" y="400" width="1520" height="80"/>
+  <object name="c1" x="400" y="320" width="160" height="80"/>
+  <object name="c1" x="880" y="280" width="160" height="120"/>
+ </objectgroup>
+ <objectgroup name="collision1" width="40" height="12">
+  <object name="c1" x="1520" y="400" width="80" height="80"/>
+ </objectgroup>
+ <objectgroup name="items" width="40" height="12">
+  <object type="0" x="200" y="360" width="40" height="40"/>
+  <object type="0" x="240" y="360" width="40" height="40"/>
+  <object type="0" x="360" y="280" width="40" height="40"/>
+  <object type="0" x="400" y="240" width="40" height="40"/>
+  <object type="0" x="440" y="240" width="40" height="40"/>
+  <object type="0" x="480" y="240" width="40" height="40"/>
+  <object type="0" x="640" y="320" width="40" height="40"/>
+  <object type="0" x="600" y="320" width="40" height="40"/>
+  <object type="0" x="560" y="280" width="40" height="40"/>
+  <object type="0" x="520" y="240" width="40" height="40"/>
+  <object type="0" x="1980" y="-180" width="40" height="40"/>
+  <object type="0" x="320" y="320" width="40" height="40"/>
+  <object type="0" x="280" y="320" width="40" height="40"/>
+  <object type="0" x="240" y="320" width="40" height="40"/>
+  <object type="0" x="680" y="320" width="40" height="40"/>
+  <object type="0" x="680" y="360" width="40" height="40"/>
+  <object type="0" x="720" y="360" width="40" height="40"/>
+  <object type="0" x="1080" y="160" width="40" height="40"/>
+  <object type="0" x="1200" y="160" width="40" height="40"/>
+  <object type="0" x="1120" y="160" width="40" height="40"/>
+  <object type="0" x="1160" y="160" width="40" height="40"/>
+ </objectgroup>
+ <objectgroup name="enemy" width="40" height="12">
+  <object type="1" x="920" y="160" width="120" height="120"/>
+  <object type="1" x="1400" y="280" width="120" height="120"/>
+  <object type="0" x="80" y="280" width="120" height="120"/>
+ </objectgroup>
+</map>

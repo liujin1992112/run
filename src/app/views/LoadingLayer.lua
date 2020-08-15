@@ -18,6 +18,11 @@ function LoadingLayer:ctor()
     armature:setPosition(700,50)                    -- 设置位置
     armature:getAnimation():playWithIndex(0, 0, 1)        -- 设置动画对象执行的动画名称
     self:addChild(armature, 1)
+
+    self:runAction(cc.Sequence:create(cc.DelayTime:create(3), cc.CallFunc:create(function()
+        local gameScene = import("app.scenes.GameScene").new()
+        display.replaceScene(gameScene)
+    end)))
 end
 
 return LoadingLayer

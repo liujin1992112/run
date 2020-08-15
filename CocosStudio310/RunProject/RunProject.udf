@@ -28,5 +28,17 @@
         <LastRunType Value="Windows" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="MainLayer.csd" />
+          <FilePathData Path="ChooseLayer.csd" />
+          <FilePathData Path="SignLayer.csd" />
+          <FilePathData Path="LoadingLayer.csd" />
+          <FilePathData Path="BackgroundLayer.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="BackgroundLayer.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>

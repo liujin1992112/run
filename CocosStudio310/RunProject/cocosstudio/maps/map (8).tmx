@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="12" tilewidth="40" tileheight="40">
+ <tileset firstgid="1" name="forest" tilewidth="40" tileheight="40">
+  <image source="forest.png" width="1600" height="400"/>
+ </tileset>
+ <layer name="terrain1" width="40" height="12">
+  <data encoding="base64" compression="zlib">
+   eJztzkkOglAURFH6xp2g0rkTREXYCYICrpw7cPDyF/AnvkpOUqlROY5Go9H8d1x48BEgRIQYiYVd9hQH41+GI044I0eBEpWFXfYaF+Nfgyta3HDHAx2eFnbZewzGvxEvTJjxxgcLVgu77Bu+v187SNMl8Q==
+  </data>
+ </layer>
+ <layer name="terrain2" width="40" height="12">
+  <data encoding="base64" compression="zlib">
+   eJztyLsRgCAABNHLURSlE/yh9l8XWwMJye3MSzZImjAjYsGKhG3g35FRcODEhRsPKt6B/8Mv55xzrq8GZjYLGQ==
+  </data>
+ </layer>
+ <layer name="decorate" width="40" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRAAOSQGwPxA445MWxiNliMQMZgMwShZpLjP2EgAQOcUckdioQp2FRg03cjgHiBzsy7R0F5AEAE3QEcw==
+  </data>
+ </layer>
+ <layer name="protect" width="40" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMApIA71IeBSQBwAYXgGo
+  </data>
+ </layer>
+ <objectgroup name="collision" width="40" height="12">
+  <object name="c1" x="80" y="360" width="1480" height="120"/>
+  <object name="c1" x="0" y="0" width="1600" height="40"/>
+ </objectgroup>
+ <objectgroup name="collision1" width="40" height="12">
+  <object name="c1" x="0" y="400" width="80" height="80"/>
+  <object name="c1" x="1560" y="360" width="40" height="120"/>
+ </objectgroup>
+ <objectgroup name="items" width="40" height="12"/>
+ <objectgroup name="enemy" width="40" height="12">
+  <object type="0" x="320" y="240" width="120" height="120"/>
+  <object type="0" x="560" y="240" width="120" height="120"/>
+  <object type="0" x="800" y="240" width="120" height="120"/>
+  <object type="0" x="1040" y="240" width="120" height="120"/>
+  <object type="0" x="1280" y="240" width="120" height="120"/>
+ </objectgroup>
+ <objectgroup name="obstacle" width="40" height="12">
+  <object type="1" x="80" y="280" width="80" height="80"/>
+ </objectgroup>
+</map>
